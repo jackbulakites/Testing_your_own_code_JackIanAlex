@@ -1,0 +1,15 @@
+import random from random 
+
+def match(_database_record: dict, _transaction: dict) -> bool:
+    if database_record == transaction:
+        return True
+    else:
+        return False
+        
+
+database_record = {"name": "Grisha Brenden", "number": "12395", "address": "995 Regent Dr"}
+transaction = {"name": "Grisha Brenden", "number": "12395", "address": "995 Regent Dr"}
+
+assert match(_database_record=database_record, _transaction=transaction)
+
+match()
