@@ -15,7 +15,7 @@ assert match(_database_record=database_record, _transaction=transaction)
 match(_database_record=database_record, _transaction=transaction)
 
 
-## Below is testing our raise NotImplementedError ##
+## Below is testing our raise NotImplementedError for name match ##
 
 database_record = {"name": "Grisha Brenden", "number": "12395", "address": "995 Regent Dr"}
 transaction = {"name": "Josh Green", "number": "12395", "address": "995 Regent Dr"}
