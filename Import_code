@@ -12,4 +12,4 @@ transaction = {"name": "Grisha Brenden", "number": "12395", "address": "995 Rege
 
 assert match(_database_record=database_record, _transaction=transaction)
 
-match()
+match(_database_record=database_record, _transaction=transaction)
