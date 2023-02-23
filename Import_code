@@ -13,3 +13,17 @@ transaction = {"name": "Grisha Brenden", "number": "12395", "address": "995 Rege
 assert match(_database_record=database_record, _transaction=transaction)
 
 match(_database_record=database_record, _transaction=transaction)
+
+
+## Below is testing our raise NotImplementedError ##
+
+database_record = {"name": "Grisha Brenden", "number": "12395", "address": "995 Regent Dr"}
+transaction = {"name": "Josh Green", "number": "12395", "address": "995 Regent Dr"}
+
+def match(_database_record: dict, _transaction: dict) -> bool: 
+  if database_record['name'] == transaction['name']:
+    return True
+  else:
+    raise NotImplementedError('Your names do not match!')
+
+match(database_record, transaction)
